@@ -1,0 +1,296 @@
+# 这是Spigot的主配置文件
+# 如你所见，这里有成吨的配置。一些选项可能会影响游戏性，
+# 所以要谨慎使用，并在配置前确保你知道每个选项的作用。
+# 如果想了解该文件中任何变量的参考信息，请查看Spigot Wiki
+# https://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# 如果你在配置方面需要帮助，或者有任何Spigot相关问题
+# 请随时加入我们的irc频道，或在论坛上留言
+# 
+# IRC： #spigot @ irc.spi.gt
+# （如果看不懂，可以访问 https://www.spigotmc.org/go/irc）
+# 论坛： https://www.spigotmc.org/
+
+config-version: 12
+# 配置版本
+settings:
+# 设置
+  debug: false
+# 调试模式
+  moved-too-quickly-multiplier: 10
+# 移速过快因数（默认10）
+  moved-wrongly-threshold: 0.0625
+# 移动错误阈值（默认0.0625）
+  save-user-cache-on-stop-only: false
+# 只在停机时保存用户缓存
+  user-cache-size: 5000
+# 用户缓存大小（默认1000）
+  sample-count: 10
+# 服务器列表中显示的玩家数（默认12）
+  bungeecord: false
+# 启用BungeeCord
+  player-shuffle: 0
+# 每？刻打乱玩家的数据包处理顺序，防止重新登录在PVP中获得优势（默认0，即禁用）
+  log-villager-deaths: true
+# 记录村民死亡
+  netty-threads: 4
+# Netty用于网络运作的线程数（默认4）
+  timeout-time: 10
+# 服务端崩溃重启前停止响应的时间秒数（默认60）
+  restart-on-crash: true
+# 崩溃时重启服务端
+  restart-script: ./start.sh
+# 重启服务端脚本
+  attribute:
+# 属性
+    maxHealth:
+# 健康上限
+      max: 2048.0
+# 最大值
+    movementSpeed:
+# 移速
+      max: 2048.0
+# 最大值
+    attackDamage:
+# 攻击伤害
+      max: 2048.0
+# 最大值
+messages:
+# 信息
+  whitelist: 幼喵园的门上锁了，请联系园长获取钥匙。
+# 白名单
+  unknown-command: 这个指令是什么呀？输入“/help”获得帮助。
+# 未知命令
+  server-full: 幼喵园已经满了，请等待有小猫咪离开后再试。
+# 服务端满
+  outdated-client: 版本不兼容，请使用 {0}
+# 过期客户端
+  outdated-server: 版本不兼容，请使用 {0}
+# 过期服务端
+  restart: 小猫咪起床中……
+# 服务端重启
+players:
+# 玩家
+  disable-saving: false
+# 禁用保存（默认false）
+advancements:
+# 进度
+  disable-saving: false
+# 禁用保存进度，列表如下
+  disabled:
+  - minecraft:story/disabled
+commands:
+# 命令
+  silent-commandblock-console: false
+# 命令方块输出不发送到控制台
+  tab-complete: 0
+# Tab补全
+  send-namespaced: true
+# 发送命名空间（在按下Tab时显示<plugin>:<command>语法）
+  log: true
+# 日志
+  replace-commands:
+# 替换命令（使用原版而不是Bukkit命令）
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  spam-exclusions:
+# 排除滥用（执行这些命令的玩家不会因滥用被踢）
+  - /skill
+stats:
+# 统计
+  disable-saving: false
+# 禁用保存统计、成就
+  forced-stats: {}
+# 强制成就
+world-settings:
+# 世界设置
+  default:
+# 默认
+    verbose: false
+# 详细信息
+    dragon-death-sound-radius: 0
+# 末影龙死亡声音半径（默认0）
+    item-despawn-rate: 6000
+# 实体消失时间刻数（默认6000）
+    view-distance: default
+# 可视距离（区块数）（可设置整数1-15）
+    wither-spawn-sound-radius: 0
+# 凋灵生成声音半径（默认0）
+    enable-zombie-pigmen-portal-spawns: true
+# 启用下界传送门生成僵尸猪灵
+    hanging-tick-frequency: 100
+# 悬挂实体更新间隔时间刻数（默认100）
+    arrow-despawn-rate: 300
+# 箭消失时间刻数
+    trident-despawn-rate: 300
+# 三叉戟消失时间刻数
+    zombie-aggressive-towards-villager: true
+# 僵尸攻击村民
+    nerf-spawner-mobs: false
+# 刷怪笼产生的怪物没有AI
+    end-portal-sound-radius: 0
+# 末地传送门声音半径（默认0）
+    mob-spawn-range: 4
+# 怪物生成范围（在玩家？区块以内）（默认6）
+    hopper-amount: 1
+# 漏斗一次传送数量（默认1）
+    seed-village: 10387312
+# 村庄种子
+    seed-desert: 14357617
+# 沙漠神殿种子
+    seed-igloo: 14357618
+# 雪屋种子
+    seed-jungle: 14357619
+# 丛林神庙种子
+    seed-swamp: 14357620
+# 女巫小屋种子
+    seed-monument: 10387313
+# 海底神殿种子
+    seed-shipwreck: 165745295
+# 沉船种子
+    seed-ocean: 14357621
+# 海底废墟种子
+    seed-outpost: 165745296
+# 掠夺者前哨站种子
+    seed-endcity: 10387313
+# 末地城种子
+    seed-slime: 987234911
+# 史莱姆区块种子
+    seed-bastion: 30084232
+# 堡垒遗迹种子
+    seed-fortress: 30084232
+# 下界要塞种子
+    seed-mansion: 10387319
+# 林地府邸种子
+    seed-fossil: 14357921
+# 下界化石种子
+    seed-portal: 34222645
+# 废弃传送门种子
+    max-tnt-per-tick: 5
+# 每刻TNT上限（默认100）
+#（已移除）    max-entity-collisions: 1
+# 每刻实体碰撞次数上限（默认8）
+    merge-radius:
+# 合并半径
+      item: 2.5
+# 物品
+      exp: 8.0
+# 经验球
+    entity-tracking-range:
+# 实体追踪范围方块数（对服务端性能影响不大，对客户端性能影响很大）
+      players: 48
+# 玩家
+      animals: 48
+# 动物
+      monsters: 48
+# 怪物
+      misc: 32
+# 杂项
+      other: 64
+# 其它
+    growth:
+# 生长（因数，100为原版默认值）
+      cactus-modifier: 100
+# 仙人掌
+      cane-modifier: 100
+# 甘蔗
+      melon-modifier: 100
+# 西瓜
+      mushroom-modifier: 100
+# 蘑菇
+      pumpkin-modifier: 100
+# 南瓜
+      sapling-modifier: 100
+# 树苗
+      beetroot-modifier: 100
+# 甜菜根
+      carrot-modifier: 100
+# 胡萝卜
+      potato-modifier: 100
+# 马铃薯
+      wheat-modifier: 100
+# 小麦
+      netherwart-modifier: 100
+# 下界疣
+      vine-modifier: 100
+# 藤蔓
+      cocoa-modifier: 100
+# 可可豆
+      bamboo-modifier: 100
+# 竹子
+      sweetberry-modifier: 100
+# 甜浆果
+      kelp-modifier: 100
+# 海带
+    entity-activation-range:
+# 实体激活范围方块数
+      animals: 32
+# 动物
+      monsters: 24
+# 怪物
+      raiders: 8
+# 掠夺者
+      misc: 2
+# 其它杂项
+      tick-inactive-villagers: true
+# 激活范围外的村民是否激活（禁用这个功能意味着村民将不能像在原版中那样工作，玩家必须在村子附近停留一段时间，以使村民的交易得到补充。）
+#（已移除）      water: 16
+# 水生动物
+#（已移除）      villagers: 32
+# 村民
+#（已移除）      flying-monsters: 32
+# 飞行怪物
+#（已移除）      villagers-work-immunity-after: 100
+# 村民工作免除后
+#（已移除）      villagers-work-immunity-for: 20
+# 村民工作免除
+#（已移除）      villagers-active-for-panic: true
+# 村民恐慌
+    ticks-per:
+# 间隔时间刻数
+      hopper-transfer: 8
+# 漏斗传输（默认8）
+      hopper-check: 1
+# 漏斗检查（默认1）
+    max-tick-time:
+# 每刻时间上限
+      tile: 1000
+# 熔炉、箱子、牌子、骷髅头等
+      entity: 1000
+# 实体
+#（已移除）      wake-up-inactive:
+# 未激活实体唤醒间隔时间刻数（不明，不要更改）
+#        animals-max-per-tick: 4
+#        animals-every: 1200
+#        animals-for: 100
+#        monsters-max-per-tick: 8
+#        monsters-every: 400
+#        monsters-for: 100
+#        villagers-max-per-tick: 4
+#        villagers-every: 600
+#        villagers-for: 100
+#        flying-monsters-max-per-tick: 8
+#        flying-monsters-every: 200
+#        flying-monsters-for: 100
+    hunger:
+# 饥饿度（更改会修改原版玩法，原则上不更改）
+      jump-walk-exhaustion: 0.05
+# 步行时跳跃极限
+      jump-sprint-exhaustion: 0.2
+# 冲刺时跳跃极限
+      combat-exhaustion: 0.1
+# 战斗极限
+      regen-exhaustion: 6.0
+# 恢复极限
+      swim-multiplier: 0.01
+# 游泳因数
+      sprint-multiplier: 0.1
+# 冲刺因数
+      other-multiplier: 0.0
+# 其它因数
+    squid-spawn-range:
+# 鱿鱼生成范围
+      min: 45
+# 高度下限（默认45）
