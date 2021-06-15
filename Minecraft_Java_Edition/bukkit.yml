@@ -50,7 +50,7 @@ chunk-gc:
   period-in-ticks: 600
 # 考虑区块垃圾回收的间隔时间刻数（默认600）
 ticks-per:
-# 操作间隔时间刻数
+# 自动操作间隔时间刻数
   animal-spawns: 400
 # 动物生成（默认400）
   monster-spawns: 5
