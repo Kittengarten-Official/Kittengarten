@@ -1,7 +1,7 @@
 简介
 =
 <p align="center">
-    <img src="https://github.com/Kittengarten/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/Logo.png" width="320" height="320" alt="Kittengarten">
+    <img src="https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/Logo.png" width="320" height="320" alt="Kittengarten">
 </p>
 
 这里是幼喵园~~本部~~。
