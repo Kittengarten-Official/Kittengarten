@@ -4,6 +4,10 @@
 幼喵园Minecraft服务器是一个小型的Minecraft Java版服务器，供幼喵园~~内部~~使用。
 * **支持插件**但**不支持模组**
 * 尽快跟进最新版本
+* <p align="center">
+    <img src="https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/%E6%8F%92%E5%9B%BE/%E5%9B%A0%E4%B8%BA%E6%9C%80%E6%96%B0%E7%89%88%E6%89%8D%E6%98%AF%E6%9C%80%E5%8F%AF%E7%88%B1%E7%9A%84.png" alt="因为最新版才是最可爱的">
+</p>
+
 # 登录方法
 使用**原版**客户端登录。
 ## Java版客户端：
