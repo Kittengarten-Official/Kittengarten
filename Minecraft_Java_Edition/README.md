@@ -1,6 +1,8 @@
 游戏须知
 =
 请勿进行恶意破坏行为
+
+[服务器相关说明](https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/Minecraft_Java_Edition/Kittengarten.md)
 # 登录
 ## 网络
 * 推荐使用电信、联通宽带
