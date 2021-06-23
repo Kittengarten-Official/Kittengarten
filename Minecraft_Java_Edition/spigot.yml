@@ -170,7 +170,7 @@ world-settings:
 # 废弃传送门种子
     max-tnt-per-tick: 5
 # 每刻TNT上限（默认100）
-#（已移除）    max-entity-collisions: 1
+    max-entity-collisions: 1
 # 每刻实体碰撞次数上限（默认8）
     merge-radius:
 # 合并半径
@@ -226,7 +226,7 @@ world-settings:
 # 海带
     entity-activation-range:
 # 实体激活范围方块数
-      animals: 32
+      animals: 12
 # 动物
       monsters: 24
 # 怪物
@@ -236,17 +236,17 @@ world-settings:
 # 其它杂项
       tick-inactive-villagers: true
 # 激活范围外的村民是否激活（禁用这个功能意味着村民将不能像在原版中那样工作，玩家必须在村子附近停留一段时间，以使村民的交易得到补充。）
-#（已移除）      water: 16
-# 水生动物
-#（已移除）      villagers: 32
+      water: 16
+# 水流
+      villagers: 16
 # 村民
-#（已移除）      flying-monsters: 32
+      flying-monsters: 18
 # 飞行怪物
-#（已移除）      villagers-work-immunity-after: 100
+      villagers-work-immunity-after: 80
 # 村民工作免除后
-#（已移除）      villagers-work-immunity-for: 20
+      villagers-work-immunity-for: 16
 # 村民工作免除
-#（已移除）      villagers-active-for-panic: true
+      villagers-active-for-panic: true
 # 村民恐慌
     ticks-per:
 # 间隔时间刻数
