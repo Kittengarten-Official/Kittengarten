@@ -370,7 +370,7 @@ world-settings:
       - stone
     viewdistances:
 # 视距
-      no-tick-view-distance: 10
+      no-tick-view-distance: 5
 # 只能看到的视距
     entity-per-chunk-save-limit:
 # 每区块的实体保存限制
