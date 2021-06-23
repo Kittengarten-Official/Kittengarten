@@ -35,9 +35,9 @@ settings:
 # 记录村民死亡
   netty-threads: 4
 # Netty用于网络运作的线程数（默认4）
-  timeout-time: 10
+  timeout-time: 600
 # 服务端崩溃重启前停止响应的时间秒数（默认60）
-  restart-on-crash: true
+  restart-on-crash: false
 # 崩溃时重启服务端
   restart-script: ./start.sh
 # 重启服务端脚本
