@@ -53,7 +53,7 @@ ticks-per:
 # 自动操作间隔时间刻数
   animal-spawns: 400
 # 动物生成（默认400）
-  monster-spawns: 5
+  monster-spawns: 3
 # 怪物生成（默认1）
   water-spawns: 100
 # 水生动物生成（默认1）
@@ -61,7 +61,7 @@ ticks-per:
 # 水生环境动物生成（默认1）
   ambient-spawns: 100
 # 环境动物生成（默认1）
-  autosave: 72000
+  autosave: 24000
 # 自动保存间隔时间刻数，0为禁用。如果有别的自动保存功能如插件，该功能应禁用。
 aliases: now-in-commands.yml
 # 别名：现已移动至commands.yml
