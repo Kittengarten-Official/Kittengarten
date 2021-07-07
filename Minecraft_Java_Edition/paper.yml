@@ -19,6 +19,8 @@ config-version: 20
 # 配置版本
 settings:
 # 设置
+  log-named-entity-deaths: true
+# 记录命名实体死亡
   region-file-cache-size: 256
 # 区域文件缓存大小上限
   save-empty-scoreboard-teams: false
