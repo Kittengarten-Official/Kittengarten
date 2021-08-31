@@ -11,7 +11,6 @@
 必须使用Java16，否则无法启动
 ## 启动器
 推荐使用[官方启动器](https://www.minecraft.net/zh-hans)或[HMCL](https://hmcl.huangyuhui.net/)
-> HMCL需要JavaFX的支持，否则无法启动
 # 建设
 * 泛指在服务器中增加实体、方块等的行为
 * 建设时应保持美观，兼顾周围环境
