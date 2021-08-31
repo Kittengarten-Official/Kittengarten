@@ -93,5 +93,6 @@ TNT爆炸频率大幅**降低**
 > * 1.18版本，原有的`1.14~1.16`、`1.17`两个主世界暂时保留
 ## 地图
 可通过浏览器访问[服务器地图](http://mc.iluyf.tk:25564/)。
+> 尽量不要在游戏时使用网页地图，以避免占用带宽导致玩家掉线
 ## 纪元
 基于[世界树纪元插件](https://github.com/Kittengarten-Official/Kitten_Anno)，源于[世界树纪元](https://github.com/Kittengarten-Official/World_Tree_Anno)，可通过`/anno`命令查询，游戏中也会定期自动播报。
