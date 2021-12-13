@@ -8,7 +8,7 @@
 * 推荐使用电信、联通宽带
 * 如果连接不佳，可以尝试重启路由器或光猫
 ## Java
-必须使用Java16或以上版本，否则无法启动
+必须使用Java17或以上版本，否则无法启动
 ## 启动器
 推荐使用[官方启动器](https://www.minecraft.net/zh-hans)或[HMCL](https://hmcl.huangyuhui.net/)
 # 建设
