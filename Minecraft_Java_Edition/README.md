@@ -13,6 +13,7 @@ Java版客户端必须使用Java17或以上版本，否则无法启动
 推荐使用[官方启动器](https://www.minecraft.net/zh-hans)、[新版官方启动器（仅Windows 10以上）](https://www.microsoft.com/store/productId/9PGW18NPBZV5)或[HMCL](https://hmcl.huangyuhui.net/)
 ## 账号
 账号外借时，如果借用人不是园内成员并且未经管理员的批准，禁止登录本服务器，否则将该账号移出白名单。
+
 任何账号对服务器造成的一切后果由号主承担。
 # 建设
 * 泛指在服务器中增加实体、方块等的行为
