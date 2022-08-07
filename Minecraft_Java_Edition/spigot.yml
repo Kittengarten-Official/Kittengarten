@@ -37,7 +37,7 @@ settings:
 # Netty用于网络运作的线程数（默认4）
   timeout-time: 600
 # 服务端崩溃重启前停止响应的时间秒数（默认60）
-  restart-on-crash: false
+  restart-on-crash: true
 # 崩溃时重启服务端
   restart-script: ./start.sh
 # 重启服务端脚本
@@ -112,7 +112,7 @@ world-settings:
 # 详细信息
     dragon-death-sound-radius: 0
 # 末影龙死亡声音半径（默认0）
-    item-despawn-rate: 6000
+    item-despawn-rate: 3000
 # 实体消失时间刻数（默认6000）
     view-distance: default
 # 可视距离（区块数）（可设置整数1-15）
@@ -123,7 +123,7 @@ world-settings:
     hanging-tick-frequency: 100
 # 悬挂实体更新间隔时间刻数（默认100）
     arrow-despawn-rate: 300
-# 箭消失时间刻数
+# 箭消失时间刻数（默认1200）
     trident-despawn-rate: 300
 # 三叉戟消失时间刻数
     zombie-aggressive-towards-villager: true
@@ -132,7 +132,7 @@ world-settings:
 # 刷怪笼产生的怪物没有AI
     end-portal-sound-radius: 0
 # 末地传送门声音半径（默认0）
-    mob-spawn-range: 4
+    mob-spawn-range: 3
 # 怪物生成范围（在玩家？区块以内）（默认6）
     hopper-amount: 1
 # 漏斗一次传送数量（默认1）
@@ -234,7 +234,7 @@ world-settings:
 # 掠夺者
       misc: 2
 # 其它杂项
-      tick-inactive-villagers: true
+      tick-inactive-villagers: false
 # 激活范围外的村民是否激活（禁用这个功能意味着村民将不能像在原版中那样工作，玩家必须在村子附近停留一段时间，以使村民的交易得到补充。）
       water: 16
 # 水流
