@@ -182,7 +182,7 @@ world-settings:
 # 盔甲架进行实体碰撞检查
     skeleton-horse-thunder-spawn-chance: 0.1
 # 骷髅陷阱马生成概率（默认0.01）
-    container-update-tick-rate: 1
+    container-update-tick-rate: 3
 # 容器更新间隔时间刻数
     all-chunks-are-slime-chunks: false
 # 所有区块都是史莱姆区块
@@ -212,11 +212,11 @@ world-settings:
 # 防止TNT在水中移动
     mob-spawner-tick-rate: 2
 # 刷怪蛋计算间隔时间刻数
-    armor-stands-tick: true
+    armor-stands-tick: false
 # 盔甲架刻
     map-item-frame-cursor-limit: 128
 # 每张地图允许的标记数
-    max-auto-save-chunks-per-tick: 8
+    max-auto-save-chunks-per-tick: 6
 # 每刻保存区块数上限（默认24）
     count-all-mobs-for-spawning: true
 # 刷怪蛋生成的生物、其它杂项生物是否计入全局生物上限（默认false）
@@ -437,7 +437,7 @@ world-settings:
 # 最大刻数
     despawn-ranges:
 # 清除范围
-      soft: 28
+      soft: 24
 # 软清除
       hard: 96
 # 硬清除
