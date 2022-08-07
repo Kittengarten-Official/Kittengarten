@@ -35,7 +35,7 @@ settings:
 # 最低API
 spawn-limits:
 # 生成限制
-  monsters: 70
+  monsters: 35
 # 怪物（默认70）
   animals: 10
 # 动物（默认10）
