@@ -2,7 +2,7 @@
 
 请勿进行恶意破坏行为
 
-[服务器相关说明](https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/Minecraft_Java_Edition/Kittengarten.md)
+[服务器相关说明](https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/Server/Kittengarten.md)
 
 ## 登录
 
