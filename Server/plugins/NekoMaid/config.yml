@@ -1,0 +1,16 @@
+
+hostname: 101.34.6.156
+customAddress: ''
+
+skin-url: ''
+head-url: ''
+
+geolite2-eula: true
+baidu-map-license-key: ''
+
+logger:
+  maxLevel: INFO
+  minLevel: 'OFF'
+
+debug: false
+token: 376bbe59-c5ba-447f-9bd3-6fcab38cc981

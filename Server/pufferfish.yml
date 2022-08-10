@@ -1,0 +1,39 @@
+# Pufferfish 配置
+# 使用 Pufferfish 主机以获得最高性能的服务器主机：https://pufferfish.host
+# 加入我们的 Discord 寻求支持：https://discord.gg/reZw4vQV9H
+# 下载新版本，网址：https://ci.pufferfish.host/job/Pufferfish
+info: # 信息
+  version: '1.0' # 版本
+# 当生物远离玩家时优化其 AI
+dab:
+  enabled: true # 启用
+  start-distance: 8 # 开始距离
+  max-tick-freq: 20 # 最大刻频率
+  activation-dist-mod: 7 # 更小值可让远处的生物 AI 弱化，更大值可恢复较大范围的生物 AI（默认 8）
+  blacklisted-entities: [] # 黑名单实体
+enable-suffocation-optimization: true # 启用窒息优化
+inactive-goal-selector-throttle: true # 无效目标选择器节省
+# 连接 Pufferfish/Airplane 功能的选项
+web-services:
+  token: ''
+# 这些值定义了实体的最大寿命。如果某个实体在此列表中，
+# 并且其存活时间超过该刻度数，则该实体将被删除。将值设置为 -1 将禁用此功能。
+entity_timeouts:
+  SNOWBALL: -1
+  LLAMA_SPIT: -1
+sentry-dsn: ''
+# 优化弹射设置
+projectile:
+  max-loads-per-tick: 10 # 每刻最大加载数
+  max-loads-per-projectile: 10 # 每弹射物最大加载区块数（不要设置过低以防三叉戟丢失）
+enable-async-mob-spawning: true # 启用异步生物生成
+enable-async-pathfinding: true # 启用异步寻路
+enable-books: true # 启用书
+enable-async-entity-tracker: true # 启用异步实体追踪
+# 其它设置
+misc: # 杂项
+  disable-method-profiler: true # 禁用方法探查器
+  disable-out-of-order-chat: false # 禁用违规聊天
+# 配置 Flare（内置探查器）
+flare:
+  url: https://flare.airplane.gg

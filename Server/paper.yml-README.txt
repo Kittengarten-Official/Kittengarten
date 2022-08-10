@@ -1,0 +1,4 @@
+全局和全局默认配置文件已移动到 /home/ubuntu/Kittengarten/config，
+特定于全局的配置文件已被移动到相应的 world 文件夹中。
+
+访问 https://docs.papermc.io/paper/configuration 获取更多信息。

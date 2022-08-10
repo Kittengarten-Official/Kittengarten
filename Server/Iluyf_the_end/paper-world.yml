@@ -1,0 +1,9 @@
+# This is a world configuration file for Paper.
+# This file may start empty but can be filled with settings to override ones in the config/paper-world-defaults.yml
+# 
+# World: Iluyf_the_end (minecraft:the_end)
+
+_version: 28
+anticheat: # 反作弊
+  anti-xray: # 假矿
+    enabled: false # 假矿

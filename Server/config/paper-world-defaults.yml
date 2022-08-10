@@ -1,0 +1,287 @@
+# This is the world defaults configuration file for Paper.
+# As you can see, there's a lot to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# 
+# If you need help with the configuration or have any questions related to Paper,
+# join us in our Discord or check the docs page.
+# 
+# Configuration options here apply to all worlds, unless you specify overrides inside
+# the world-specific config file inside each world folder.
+# 
+# Docs: https://docs.papermc.io/
+# Discord: https://discord.gg/papermc
+# Website: https://papermc.io/
+
+_version: 28 # 版本
+anticheat: # 反作弊
+  anti-xray: # 假矿
+    enabled: false # 假矿
+    engine-mode: 2 # 引擎模式
+    hidden-blocks: # 隐藏方块
+    - copper_ore
+    - deepslate_copper_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - coal_ore
+    - deepslate_coal_ore
+    - lapis_ore
+    - deepslate_lapis_ore
+    - mossy_cobblestone
+    - obsidian
+    - chest
+    - diamond_ore
+    - deepslate_diamond_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - clay
+    - emerald_ore
+    - deepslate_emerald_ore
+    - ender_chest
+    lava-obscures: true # 混淆接触熔岩的方块
+    max-block-height: 64 # 最大运行高度
+    replacement-blocks: # 替代方块
+    - andesite
+    - chest
+    - deepslate
+    - diorite
+    - dirt
+    - granite
+    - gravel
+    - oak_planks
+    - stone     
+    update-radius: 2 # 更新半径
+    use-permission: false # 使用权限
+  obfuscation: # 混淆
+    items: # 物品
+      hide-durability: false # 隐藏耐久度
+      hide-itemmeta: false # 隐藏物品数据
+chunks: # 区块
+  auto-save-interval: default # 自动保存间隔
+  delay-chunk-unloads-by: 10s # 延迟区块卸载
+  entity-per-chunk-save-limit: # 每个区块的实体保存限制（任何实体都可以添加到列表中）
+    arrow: 8 
+    ender_pearl: 4
+    experience_orb: 4
+    fireball: 4
+    small_fireball: 4
+    snowball: 4
+  fixed-chunk-inhabited-time: -1 # 固定区块加载时间
+  max-auto-save-chunks-per-tick: 6 # 每刻最大自动保存区块数（默认 24）
+  prevent-moving-into-unloaded-chunks: true # 防止进入未加载区块
+collisions: # 碰撞
+  allow-player-cramming-damage: true # 允许玩家与过量实体碰撞后受伤
+  allow-vehicle-collisions: true # 允许载具碰撞
+  fix-climbing-bypassing-cramming-rule: false # 修复蜘蛛攀爬时绕过实体碰撞限制
+  max-entity-collisions: 1 # 最大实体碰撞
+  only-players-collide: true # 只处理玩家碰撞
+entities: # 实体
+  armor-stands: # 盔甲架
+    do-collision-entity-lookups: true # 执行实体碰撞检查
+    tick: false # 刻
+  behavior: # 行为
+    baby-zombie-movement-modifier: 0.5 # 小僵尸移速因数（比基础快）
+    disable-chest-cat-detection: false # 不检测猫坐在箱子上
+    disable-creeper-lingering-effect: false # 禁用苦力怕留下滞留效果云
+    disable-player-crits: false # 禁用玩家 PvP 关键命中
+    door-breaking-difficulty: # 破门难度
+      husk:
+      - HARD
+      vindicator:
+      - NORMAL
+      - HARD
+      zombie:
+      - HARD
+      zombie_villager:
+      - HARD
+      zombified_piglin:
+      - HARD
+    ender-dragons-death-always-places-dragon-egg: true # 更多龙蛋
+    experience-merge-max-value: -1 # 经验球最大值（-1 为不限制）
+    mobs-can-always-pick-up-loot: # 怪物总是能捡起物品
+      skeletons: false
+      zombies: false
+    nerf-pigmen-from-nether-portals: true # 下界传送门生成的僵尸猪灵没有 AI
+    parrots-are-unaffected-by-player-movement: true # 鹦鹉不受玩家运动的影响 
+    phantoms-do-not-spawn-on-creative-players: true # 幻翼不攻击创造模式玩家
+    phantoms-only-attack-insomniacs: true # 防止幻翼攻击已入睡的玩家
+    piglins-guard-chests: true # 如果猪灵在愤怒时应该试图守卫胸部
+    pillager-patrols: # 掠夺者巡逻队
+      disable: false # 禁用
+      spawn-chance: 0.02 # 生成几率
+      spawn-delay: # 生成延迟
+        per-player: true # 每玩家
+        ticks: 120000 #刻
+      start: # 开始
+        day: 50 # 游戏日数
+        per-player: true # 每玩家
+    should-remove-dragon: false # 移除无传送门的末影龙
+    spawner-nerfed-mobs-should-jump: true # 无 AI 的怪物会跳（便于建设刷怪塔）
+    zombie-villager-infection-chance: -1.0 # 僵尸村民感染概率（默认 -1.0，即基于游戏难度）
+    zombies-target-turtle-eggs: false # 僵尸攻击海龟蛋
+  entities-target-with-follow-range: false # 指向实体时是否使用跟随范围（默认 false）
+  mob-effects: # 生物效果
+    immune-to-wither-effect: # 免疫凋零
+      wither: true
+      wither-skeleton: true
+    spiders-immune-to-poison-effect: true # 蜘蛛免疫毒
+    undead-immune-to-certain-effects: true # 亡灵生物免疫某些效果
+  spawning: # 生成
+    all-chunks-are-slime-chunks: false # 所有区块是史莱姆区块
+    alt-item-despawn-rate: # 可选物品消失速率
+      enabled: true # 启用
+      items: # 物品
+        cobblestone: 300
+        netherrack: 300
+        golden_sword: 200
+        wheat_seeds: 200
+        bone: 200
+        spider_eye: 200
+        gunpowder: 200
+    count-all-mobs-for-spawning: false # 生成时计算所有生物
+    creative-arrow-despawn-rate: '200' # 创造模式箭消失速率
+    despawn-ranges: # 清除范围
+      ambient:
+        hard: 96
+        soft: 24
+      axolotls:
+        hard: 96
+        soft: 24
+      creature:
+        hard: 96
+        soft: 24
+      misc:
+        hard: 96
+        soft: 28
+      monster:
+        hard: 96
+        soft: 24
+      underground_water_creature:
+        hard: 96
+        soft: 24
+      water_ambient:
+        hard: 64
+        soft: 24
+      water_creature:
+        hard: 96
+        soft: 24
+    disable-mob-spawner-spawn-egg-transformation: false # 禁用玩家使用蛋改变刷怪笼
+    duplicate-uuid: # 重复 UUID
+      mode: SAFE_REGEN # 模式
+      safe-regen-delete-range: 32 # 安全再生删除范围
+    filter-nbt-data-from-spawn-eggs-and-related: true # 过滤一些物品中的 NBT
+    iron-golems-can-spawn-in-air: false # 铁傀儡可以在空中生成
+    monster-spawn-max-light-level: -1 # 怪物最大生成亮度（-1 为原版行为）
+    non-player-arrow-despawn-rate: '200' # 非玩家箭消失速率
+    per-player-mob-spawns: true # 每玩家怪物生成
+    scan-for-legacy-ender-dragon: true # 扫描末影龙
+    skeleton-horse-thunder-spawn-chance: 0.1 # 骷髅陷阱马生成机会
+    slime-spawn-height: # 史莱姆生成高度
+      slime-chunk: # 史莱姆区块
+        maximum: 40.0 # 最大高度
+      surface-biome: # 表面生物群系
+        maximum: 70.0 # 最大高度
+        minimum: 50.0 # 最小高度
+    spawn-limits: # 生成限制
+      ambient: -1
+      axolotls: -1
+      creature: -1
+      monster: -1
+      underground_water_creature: -1
+      water_ambient: -1
+      water_creature: -1
+    wandering-trader: # 流浪商人
+      spawn-chance-failure-increment: 25
+      spawn-chance-max: 75
+      spawn-chance-min: 25
+      spawn-day-length: 24000
+      spawn-minute-length: 1200
+    wateranimal-spawn-height: # 水生动物生成高度
+      maximum: default
+      minimum: default
+environment: # 环境
+  disable-explosion-knockback: false # 禁用爆炸击退
+  disable-ice-and-snow: false # 禁用冰雪形成
+  disable-teleportation-suffocation-check: false # 禁用传送窒息检查
+  disable-thunder: false # 禁用闪电
+  frosted-ice: # 霜冰
+    delay: # 延迟
+      max: 40
+      min: 20
+    enabled: true # 启用
+  generate-flat-bedrock: false # 生成平坦基岩
+  nether-ceiling-void-damage-height: 0 # 下届天花板顶部伤害
+  optimize-explosions: true # 爆炸优化
+  portal-create-radius: 16 # 下界传送门创建半径
+  portal-search-radius: 128 # 下界传送门搜索半径
+  portal-search-vanilla-dimension-scaling: true # 主世界和下界维度比例
+  treasure-maps: # 藏宝图
+    enabled: true # 启用
+    find-already-discovered: # 找到已发现的藏宝图
+      loot-tables: 'default' # 战利品表
+      villager-trade: false # 村民交易
+  water-over-lava-flow-speed: 5 # 水漫过熔岩的流速
+feature-seeds: # 特性种子
+  generate-random-seeds-for-all: false # 全部生成随机种子
+fishing-time-range: # 钓鱼时间范围
+  maximum: 600
+  minimum: 100
+fixes: # 修复
+  disable-unloaded-chunk-enderpearl-exploit: true # 防止末影珍珠抛入未加载区块
+  falling-block-height-nerf: 0 # 从服务器中删除下落块的高度（<0 为禁用）
+  fix-curing-zombie-villager-discount-exploit: true # 修复用于通过感染和治愈僵尸村民来获得大量折扣的漏洞
+  fix-items-merging-through-walls: false # 修复项目合并穿墙（会降低性能）
+  prevent-tnt-from-moving-in-water: false # 防止 TNT 在流水里移动
+  remove-corrupt-tile-entities: true # 移除卡死的实体
+  split-overstacked-loot: true # 拆分栈溢出的战利品
+  tnt-entity-height-nerf: 0 # 从服务器中删除下落 TNT 的高度（<0 为禁用）
+hopper: # 漏斗
+  cooldown-when-full: true # 已满时冷却
+  disable-move-event: true # 禁用移动事件
+  ignore-occluding-blocks: true # 忽略遮挡方块
+lootables: # 战利品
+  auto-replenish: true # 启用再生
+  max-refills: -1 # 最大再生限制次数（-1 为禁用）
+  refresh-max: 2d # 最长再生时间
+  refresh-min: 12h # 最短再生时间
+  reset-seed-on-fill: true # 填充时重置种子
+  restrict-player-reloot: true # 限制同一名玩家重复获取
+maps: # 地图
+  item-frame-cursor-limit: 128 # 每个地图允许标记数
+  item-frame-cursor-update-interval: 10 # 地图标记更新时间间隔刻数
+max-growth-height: # 最大生长高度
+  bamboo:
+    max: 16
+    min: 11
+  cactus: 3
+  reeds: 3
+misc: #杂项
+  disable-end-credits: false # 禁用结束游戏分数
+  disable-relative-projectile-velocity: false # 指示服务器在计算射箭的速度时忽略射手的速度
+  disable-sprint-interruption-on-attack: false # 确定如果冲刺玩家受到攻击，服务器是否会打断他们
+  light-queue-size: 20 # 每个世界主线程的光更新队列应该有多大（原版 5，但是会导致问题）
+  max-leash-distance: 20.0 # 最大拴绳距离
+  redstone-implementation: alternate-current # 红石优化
+  shield-blocking-delay: 0 # 盾牌延迟
+  show-sign-click-command-failure-msgs-to-player: false # 通过标志点击执行的命令是否应该向玩家显示失败消息。
+  update-pathfinding-on-block-update: false # 方块变化导致生物重新寻路（默认 true）
+scoreboards: # 计分板
+  allow-non-player-entities-on-scoreboards: false # 允许非玩家实体
+  use-vanilla-world-scoreboard-name-coloring: true # 使用原版记分牌对玩家昵称进行着色
+spawn: # 出生点
+  allow-using-signs-inside-spawn-protection: false # 允许在出生点保护区块内使用标志
+  keep-spawn-loaded: false # 出生点区块常加载
+  keep-spawn-loaded-range: 5 # 出生点区块常加载范围
+tick-rates: # 刻速率
+  behavior: # 行为
+    villager: # 村民
+      validatenearbypoi: 60
+  container-update: 1 # 容器更新刻数
+  grass-spread: 1 # 草方块扩散速率
+  mob-spawner: 3 # 生物生成
+  sensor: # 传感器
+    villager: # 村民
+      secondarypoisensor: 80
+unsupported-settings: # 不支持的设置
+  fix-invulnerable-end-crystal-exploit: true # 修复创建无敌末影水晶漏洞（MC-108513）

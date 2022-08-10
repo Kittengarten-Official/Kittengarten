@@ -1,0 +1,11 @@
+{
+  "render-threads-enabled": true,
+  "maps": {
+    "Iluyf": {
+      "update-enabled": true
+    },
+    "Iluyf_Legacy": {
+      "update-enabled": true
+    }
+  }
+}

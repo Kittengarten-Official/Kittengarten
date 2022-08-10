@@ -1,0 +1,54 @@
+# 这是 Bukkit 的帮助配置文件。
+# 
+# 默认情况下，您不需要修改此文件。所有插件命令的帮助主题都由已安装的插件自动提供或从中提取。
+# 仅当您希望向服务器添加新的帮助页或覆盖现有插件命令的帮助页时，才需要修改此文件。
+# 
+# 本文件分为以下几个部分：
+# -- general-topics: 列出管理员定义的帮助主题
+# -- index-topics:   列出管理员定义的索引主题
+# -- amend-topics:   列出要应用于现有帮助主题的主题修订
+# -- ignore-plugins: 列出应从帮助中排除的所有插件
+# 
+# 下面给出了示例。修改命令主题时，字符串 <text> 将替换为帮助主题中的现有值。
+# 主题文本中可以使用颜色代码。颜色代码字符是 & 后跟 0-F。
+# ================================================================
+# 
+# 将此设置为 true 可在主帮助中列出各个命令帮助主题。
+command-topics-in-master-index: true
+# 
+# 每个常规主题将与所有插件命令主题一起作为单独的主题显示在帮助索引中。
+general-topics:
+    Rules:
+        shortText: 服务器规则
+        fullText: |
+            &6https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/Minecraft_Java_Edition/README.md
+        permission: topics.rules
+# 
+# 每个索引主题将与所有插件命令主题一起作为单独的子索引显示在帮助索引中。
+# 要覆盖默认帮助索引（当用户执行 /help 时显示），请将索引主题命名为 “default”。
+index-topics:
+    Ban Commands:
+        shortText: 玩家封禁命令
+        preamble: 请勿滥用
+        permission: op
+        commands:
+            - /ban
+            - /ban-ip
+            - /banlist
+# 
+# 主题修改用于更改自动生成的插件命令主题的内容。
+# amended-topics:
+#     /stop:
+#         shortText: Stops the server cold....in its tracks!
+#         fullText: <text> - This kills the server.
+#         permission: you.dont.have
+# 
+# 忽略的插件列表中的任何插件都将从帮助中排除。名称必须与/plugins命令显示的名称匹配。
+# 忽略 “Bukkit” 以从索引中删除标准的 Bukkit 命令。忽略 “全部” 以完全禁用自动帮助主题生成。
+# Any plugin in the ignored plugins list will be excluded from help. The name must match the name displayed by
+# the /plugins command. Ignore "Bukkit" to remove the standard bukkit commands from the index. Ignore "All"
+# to completely disable automatic help topic generation.
+# ignore-plugins:
+#    - PluginNameOne
+#    - PluginNameTwo
+#    - PluginNameThree

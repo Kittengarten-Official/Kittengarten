@@ -1,0 +1,122 @@
+# 这是 Paper 的全局配置文件
+# 如你所见，这里有成吨的配置。一些选项可能会影响游戏性，
+# 所以要谨慎使用，并在配置前确保你知道每个选项的作用。
+# 
+# 如果你在配置方面需要帮助，或有任何与 Paper 有关的问题，
+# 加入我们的 Discord 或访问文档中的页面。
+#
+# 世界配置选项已移动到各自的世界文件夹中。这些文件名为paper-world.yml
+# 
+# 文档： https://docs.papermc.io/
+# Discord: https://discord.gg/papermc
+# 网站： https://papermc.io/ 
+
+_version: 28 # 版本
+async-chunks: # 异步区块
+  threads: 2 # 线程数（默认 -1，即禁用）
+chunk-loading: # 区块加载
+  autoconfig-send-distance: true # 自动配置发送距离
+  enable-frustum-priority: true # 启用视野优先级（通常不建议使用，默认 false）
+  global-max-chunk-load-rate: 50.0 # 全局区块加载速率上限（默认 -1.0，即禁用）
+  global-max-chunk-send-rate: 50.0 # 全局区块发送速率上限（默认 -1.0，即禁用）
+  global-max-concurrent-loads: 100.0 # 全局最大并发加载区块数（默认 500）
+  max-concurrent-sends: 2 # 最大并发发送区块数（默认 2）
+  min-load-radius: 2 # 最小加载半径
+  player-max-chunk-load-rate: 20.0 # 玩家区块加载速率上限（默认 -1.0，即禁用）
+  player-max-concurrent-loads: 20.0 # 玩家最大并发加载区块数（默认 20）
+  target-player-chunk-send-rate: 50.0 # 目标玩家区块发送速率上限（默认 100.0）
+collisions: # 碰撞
+  enable-player-collisions: true # 启用玩家碰撞
+  send-full-pos-for-hard-colliding-entities: true # 发送船只、矿车碰撞精确位置
+commands: # 命令
+  fix-target-selector-tag-completion: true # 修复目标选择器标记补全
+  suggest-player-names-when-null-tab-completions: true # 指示服务器在没有其他可用完成选项卡时返回玩家列表
+  time-command-affects-all-worlds: false # 时间命令影响所有世界
+console: # 控制台
+  enable-brigadier-completions: true # 启用 Mojang 的 brigadier（高级）命令完成。
+  enable-brigadier-highlighting: true # 启用 Mojang 的 brigadier 突出显示。
+  has-all-permissions: false # 命令发送方是否具有所有权限。
+item-validation: # 物品验证
+  book: # 书
+    author: 8192 # 作者
+    page: 16384 # 页
+    title: 8192 # 标题
+  book-size: #数
+    page-max: 2560  # 书中单页可占字节数
+    total-multiplier: 0.98 # 总乘数
+  display-name: 8192 # 显示名称最大长度
+  lore-line: 8192 # 最大行长度
+  resolve-selectors-in-books: false # 是否解析书中的选择器
+logging: # 日志
+  deobfuscate-stacktraces: true # 是否在日志记录中将 Spigot 映射的堆栈跟踪重新映射到 Mojang 映射
+  log-player-ip-addresses: true # 记录玩家 IP
+  use-rgb-for-named-text-colors: true # 是否应使用 RGB 代码记录命名的 ANSI 颜色。
+messages: # 消息
+  kick: # 踢出
+    authentication-servers-down: 网络问题，请重试喵！ # 身份验证服务器不可用
+    connection-throttle: 连接太频繁了，嘤嘤嘤。 # 连接限制
+    flying-player: 风之翼是需要取得执照的喵！ # 飞行玩家
+    flying-vehicle: 坠毁。 # 飞行器
+  no-permission: <red>不是管理员，不可以随便使用喵！ #无权限
+  use-display-name-in-quit-message: false # 在退出消息中使用玩家的显示名称（由插件设置）
+misc: # 杂项
+  fix-entity-position-desync: true # 修复实体位置不同步
+  lag-compensate-block-breaking: true # 补偿 TPS 低落导致的不同步
+  load-permissions-yml-before-plugins: true # 加载 permission.yml
+  max-joins-per-tick: 1 # 每刻最大加入玩家数
+  region-file-cache-size: 256 # 区域文件缓存大小
+  strict-advancement-dimension-check: false # 严格提升维度检查
+  use-alternative-luck-formula: false # 使用替代运气公式 https://gist.github.com/aikar/40281f6c73ec9b6fef7588e6461e1ba9
+  use-dimension-type-for-custom-spawners: false # 使用自定义生成器的维度类型
+packet-limiter: # 数据包限制器
+  all-packets: # 所有数据包
+    action: KICK # 行为
+    interval: 7.0 # 间隔
+    max-packet-rate: 500.0 # 最大数据包速率
+  kick-message: <red>太快了喵！
+  overrides: # 重写
+    ServerboundPlaceRecipePacket: # 服务器放置配方数据包
+      action: DROP # 行为
+      interval: 4.0 # 间隔
+      max-packet-rate: 5.0 # 最大数据包速率
+player-auto-save: # 玩家自动保存
+  max-per-tick: -1 # 每刻最多保存玩家数
+  rate: -1 # 速率
+proxies: # 代理
+  bungee-cord: # BungeeCord
+    online-mode: true # 在线模式（正版）
+  proxy-protocol: false # 服务器是否应处理代理协议消息。这与 Velocity 或 BungeeCord 完全无关。仅当您使用 HAProxy 或类似设备时才启用此功能。
+  velocity: # Velocity
+    enabled: false # 启用
+    online-mode: true # 在线模式（正版）
+    secret: '' # 密钥
+scoreboards: # 计分板
+  save-empty-scoreboard-teams: false # 保存空计分板队伍
+  track-plugin-scoreboards: false # 跟踪插件计分板
+spam-limiter: # 滥用限制器
+  incoming-packet-threshold: 300 # 传入数据包阈值
+  recipe-spam-increment: 1 # 玩家按下合成表的计数
+  recipe-spam-limit: 20 # 合成表计数上限
+  tab-spam-increment: 1 # 玩家在聊天窗口按下 Tab 的计数
+  tab-spam-limit: 500 # Tab 计数上限
+timings: # Timings 性能分析
+  enabled: false # 启用
+  hidden-config-entries: # 隐藏配置条目
+  - database
+  - settings.bungeecord-addresses
+  - settings.velocity-support.secret
+  - proxies.velocity.secret
+  history-interval: 300 # 报告中的散点间隔
+  history-length: 3600 # 单个报告的数据总量
+  server-name: Kittengarten # 服务器名称
+  server-name-privacy: false # 服务器名称为隐私
+  url: https://timings.aikar.co/ # 链接
+  verbose: false # 详细信息
+unsupported-settings: # 不支持的设置
+  allow-headless-pistons: false # 允许无头活塞
+  allow-permanent-block-break-exploits: false # 允许破坏基岩、末地传送门
+  allow-piston-duplication: false # 允许活塞复制物品
+  perform-username-validation: true # 执行用户名验证
+watchdog: # 监视器
+  early-warning-delay: 120000 # 预警延迟（毫秒）
+  early-warning-every: 60000 # 预警间隔（毫秒）

@@ -1,0 +1,1 @@
+[{"cron":"0 0 * * *","enabled":true,"name":"地图更新","values":["/bluemap"],"whenIdle":true},{"cron":"*/5 * * * *","enabled":true,"name":"垃圾回收","values":["/lr gc"],"whenIdle":true}]

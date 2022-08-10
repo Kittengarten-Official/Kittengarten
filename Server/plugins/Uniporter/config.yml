@@ -1,0 +1,17 @@
+# Debug environment, default: false
+debug: false
+# Use native transport, default: true
+use-native-transport: true
+# Agree ACME eula
+eula: true
+# Do you want to do the order?
+# This will temporarily open your port 80 for ACME challenge.
+# If order failed, SSL will be turned off for minecraft port.
+order: false
+# Email
+email: kittengarten@vip.qq.com
+# Organization name
+organization: Kittengarten
+# Domain names
+domains:
+  - mc.iluyf.com

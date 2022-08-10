@@ -1,0 +1,24 @@
+# Chunky Configuration
+# https://github.com/pop4959/Chunky/wiki/Configuration
+version: 1
+language: zh_CN
+continue-on-restart: false
+tasks:
+  Iluyf:
+    cancelled: true
+    radius: 5000.0
+    x-center: 0.0
+    z-center: 0.0
+    iterator: concentric
+    shape: square
+    count: 393129
+    time: 372598
+  Iluyf_Legacy:
+    cancelled: false
+    radius: 2500.0
+    x-center: 0.0
+    z-center: 0.0
+    iterator: concentric
+    shape: square
+    count: 7962
+    time: 995683
