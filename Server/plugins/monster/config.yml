@@ -1,4 +1,4 @@
-# 怪物下界合金装备生成概率和死亡掉率 1.16有效
+# 怪物合金装备生成概率和死亡掉率 1.16有效
 netherite: 0.1
 netheriteDropChance: 0.05
 
@@ -23,30 +23,40 @@ Leather: 0.2
 LeatherDropChance: 0.5
 
 # 装备随机附魔的概率和最大随机附魔数量
-Enchantment : 0.25
+Enchantment: 0.5
 EnchantmentNumber: 4
 
-# 启用怪物等级规则的世界
+# 启用怪物等级规则的世界 如果填 [ALL] 意思是全部世界都启用
 worlds:
-- "Iluyf"
+  - "Iluyf"
+
+# 怪物初始等级范围
+randomLevel: 25
 
 # 怪物攻击玩家升级概率
 levelProbability: 0.25
+
+# 玩家攻击怪物,怪物瞬移的概率
+teleport: 0.01
 
 # 每级增加血量
 levelHealth: 5
 # 每级增加伤害
 levelDamage: 1
 
-# 怪物升级中突变为BOSS的概率(变为BOSS后不会再升级)
-levelElite: 0.05
-# BOSS血量
-levelEliteHealth: 500
-# BOSS伤害
-levelEliteDamage: 100
+monsterOnMsg: "§a请注意：管理员开启了超强怪物，超强怪物即将来袭喵！"
+monsterOffMsg: "§a超强怪物已经关闭，超强怪物不再刷新喵！"
 
-# 玩家攻击怪物，怪物瞬移的概率
-teleport: 0.01
+# 生成类型, add 新增生物  replace 替换原版生物
+spawn: replace
 
-monsterOnMsg: §a请注意:管理员开启了超强怪物,超强怪物即将来袭!!!!
-monsterOffMsg: §a请注意:超强怪物已经关闭,超强怪物不再刷新!!!!
+# add类型 在玩家附近生成怪物的最小范围
+minBound: 16
+# add类型 在玩家附近生成怪物的最大范围
+maxBound: 32
+
+# add类型 生成速度 单位秒
+time: 1
+
+# 一个玩家的生成冷却时间 单位秒
+addPlayerCd: 5

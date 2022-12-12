@@ -1,1 +1,29 @@
-[{"cron":"0 0 * * *","enabled":true,"name":"地图更新","values":["/bluemap"],"whenIdle":true},{"cron":"*/5 * * * *","enabled":true,"name":"垃圾回收","values":["/lr gc"],"whenIdle":true}]
+[
+    {
+        "cron": "0 0 * * *",
+        "enabled": true,
+        "name": "地图更新",
+        "values": [
+            "/bluemap"
+        ],
+        "whenIdle": true
+    },
+    {
+        "cron": "*/5 * * * *",
+        "enabled": true,
+        "name": "垃圾回收",
+        "values": [
+            "/lr gc"
+        ],
+        "whenIdle": true
+    },
+    {
+        "name": "石英塔",
+        "cron": "*/20 * * * *",
+        "enabled": true,
+        "whenIdle": false,
+        "values": [
+            "/fill 61 64 43 64 67 46 minecraft:nether_quartz_ore"
+        ]
+    }
+]

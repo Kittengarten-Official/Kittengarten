@@ -7,26 +7,26 @@
 * **支持插件**但**不支持模组**
 * 尽快跟进最新版本
 
-![因为最新版才是最可爱的](https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/%E6%8F%92%E5%9B%BE/%E5%9B%A0%E4%B8%BA%E6%9C%80%E6%96%B0%E7%89%88%E6%89%8D%E6%98%AF%E6%9C%80%E5%8F%AF%E7%88%B1%E7%9A%84.png#pic_center)
+![因为最新版才是最可爱的](https://github.com/Kittengarten-Official/Kittengarten/blob/%E4%B8%BB%E5%88%86%E6%94%AF/%E6%8F%92%E5%9B%BE/%E5%9B%A0%E4%B8%BA%E6%9C%80%E6%96%B0%E7%89%88%E6%89%8D%E6%98%AF%E6%9C%80%E5%8F%AF%E7%88%B1%E7%9A%84.png#pic_center "By 园长")
 
 ## 登录方法
 
 使用**原版**客户端登录。
 
-### Java版客户端
+### Java 版客户端
 
-* 地址：`mc.iluyf.com`
+* 地址：`mc.iluyf.com`,`mc.eekda.cn`
 * 端口：`25565`
-* 版本：`1.19.1`,`1.19.2`
+* 版本：`1.19.3`
 >
 > * 在线模式已开，需要登录拥有 Java 版的 Minecraft 账号。
 > * 白名单已开，需要先将 Minecraft Java 版 ID 添加至白名单。
 >
 ### 基岩版客户端
 
-* 地址：`mc.iluyf.com`
+* 地址：`mc.iluyf.com`,`mc.eekda.cn`
 * 端口：`19132`
-* 版本：`1.19.0`,`1.19.10`,`1.19.11`,`1.19.20`
+* 版本：`1.19.20`,`1.19.21`,`1.19.22`,`1.19.30`,`1.19.31`,`1.19.40`,`1.19.41`,`1.19.50`
 >
 > * 即使通过基岩版客户端登录，也需要登录拥有 Java 版且 ID 已添加至白名单的 Minecraft 账号。
 > * 游戏内可通过`/geyser help`获取有关命令帮助。
@@ -66,8 +66,7 @@
 
 * `HOME`主世界中，生成的怪物有如下改变
   * 怪物拥有等级，并可能携带较高级的装备和随机附魔
-  * 怪物攻击玩家时有概率升级，**增加**HP与伤害
-  * 怪物升级时有概率突变为 Boss，**巨幅提升**HP与伤害
+  * 怪物攻击玩家时有概率升级，每级**增加**`5`点 HP 与`1`点伤害
   * 玩家攻击怪物时，怪物有小概率**瞬移**
 
 ### 容器
@@ -105,7 +104,7 @@
 
 ### 昼夜变化
 
-世界树纪元一昼夜的时间是一个月
+世界树纪元**一昼夜**的时间是**一个月**
 
 ### 床
 
@@ -156,4 +155,4 @@ TNT爆炸频率大幅**降低**
 
 ### 纪元
 
-基于[世界树纪元插件](https://github.com/Kittengarten-Official/Kitten_Anno)，源于[世界树纪元](https://github.com/Kittengarten-Official/World_Tree_Anno)，可通过`/anno`命令查询，游戏中也会定期自动播报。
+基于[世界树纪元插件](https://github.com/Kittengarten/KittenAnnoPaper)，源于[世界树纪元](https://github.com/Kittengarten/WorldTreeAnno)，可通过`/anno`命令查询，游戏中也会定期自动播报。
