@@ -10,7 +10,46 @@
 
 verbose: false
 settings:
+  fix-projectile-looting-transfer: false
+  blast-resistance-overrides: {}
+  block-fall-multipliers:
+    minecraft:brown_bed:
+      distance: 0.5
+    minecraft:light_gray_bed:
+      distance: 0.5
+    minecraft:magenta_bed:
+      distance: 0.5
+    minecraft:purple_bed:
+      distance: 0.5
+    minecraft:light_blue_bed:
+      distance: 0.5
+    minecraft:pink_bed:
+      distance: 0.5
+    minecraft:red_bed:
+      distance: 0.5
+    minecraft:hay_block:
+      damage: 0.2
+    minecraft:white_bed:
+      distance: 0.5
+    minecraft:gray_bed:
+      distance: 0.5
+    minecraft:cyan_bed:
+      distance: 0.5
+    minecraft:blue_bed:
+      distance: 0.5
+    minecraft:green_bed:
+      distance: 0.5
+    minecraft:orange_bed:
+      distance: 0.5
+    minecraft:black_bed:
+      distance: 0.5
+    minecraft:yellow_bed:
+      distance: 0.5
+    minecraft:lime_bed:
+      distance: 0.5
   messages:
+    ram-command-output: '<green>Ram Usage: <used>/<xmx> (<percent>)'
+    rambar-command-output: <green>Rambar toggled <onoff> for <target>
     cannot-ride-mob: <red>你不能骑它喵！
     afk-broadcast-away: <yellow><italic>%s 在挂机喵！
     afk-broadcast-back: <yellow><italic>%s 停止挂机了喵！
