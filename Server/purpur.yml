@@ -862,7 +862,7 @@ world-settings:
         brain-ticks: 3
         use-brain-ticks-only-when-lagging: true
         follow-emerald-blocks: false
-        can-be-leashed: false
+        can-be-leashed: true
         can-breed: true
         breeding-delay-ticks: 6000
         clerics-farm-warts: false
@@ -952,7 +952,7 @@ world-settings:
         attributes:
           max_health: 20.0
         follow-emerald-blocks: false
-        can-be-leashed: false
+        can-be-leashed: true
         takes-damage-from-water: false
         allow-trading: true
         always-drop-exp: false
@@ -987,8 +987,8 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       zombie_villager:
-        ridable: false
-        ridable-in-water: false
+        ridable: true
+        ridable-in-water: true
         controllable: true
         attributes:
           max_health: 20.0
@@ -1355,7 +1355,7 @@ world-settings:
           show-particles: false
           show-icon: true
         idle-timeout:
-          kick-if-idle: true
+          kick-if-idle: false
           tick-nearby-entities: true
           count-as-sleeping: false
           update-tab-list: false

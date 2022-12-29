@@ -119,7 +119,7 @@ entities: # 实体
     should-remove-dragon: false # 移除无传送门的末影龙
     spawner-nerfed-mobs-should-jump: true # 无 AI 的怪物会跳（便于建设刷怪塔）
     zombie-villager-infection-chance: -1.0 # 僵尸村民感染概率（默认 -1.0，即基于游戏难度）
-    zombies-target-turtle-eggs: false # 僵尸攻击海龟蛋
+    zombies-target-turtle-eggs: true # 僵尸攻击海龟蛋
   entities-target-with-follow-range: false # 指向实体时是否使用跟随范围（默认 false）
   mob-effects: # 生物效果
     immune-to-wither-effect: # 免疫凋零

@@ -1,14 +1,14 @@
-#TNT爆炸保护 true开启保护 false关闭
+# TNT 爆炸保护 true 开启保护 false 关闭
 TNT: false
-#末影水晶爆炸保护 true开启保护 false关闭
+# 末影水晶爆炸保护 true 开启保护 false 关闭
 ENDER: false
-#苦力怕爆炸保护 true开启保护 false关闭
+# 苦力怕爆炸保护 true 开启保护 false 关闭
 CREEPER: true
-#凋零头爆炸保护 true开启保护 false关闭
-SKULL: false
-#凋零生成爆炸保护 true开启保护 false关闭
-WITHER: false
-#恶魂火焰弹爆炸保护 true开启保护 false关闭
+# 凋零头爆炸保护 true 开启保护 false 关闭
+SKULL: true
+# 凋零生成爆炸保护 true 开启保护 false 关闭
+WITHER: true
+# 恶魂火焰弹爆炸保护 true 开启保护 false 关闭
 GHAST: false
-#末地和地狱是否能使用床 true不能使用 false能使用
+# 末地和地狱是否能使用床 true 不能使用 false 能使用
 BED: false
