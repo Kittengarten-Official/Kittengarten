@@ -170,7 +170,7 @@ entities: # 实体
     duplicate-uuid: # 重复 UUID
       mode: SAFE_REGEN # 模式
       safe-regen-delete-range: 32 # 安全再生删除范围
-    filter-nbt-data-from-spawn-eggs-and-related: true # 过滤一些物品中的 NBT
+    filter-nbt-data-from-spawn-eggs-and-related: true # 过滤怪物蛋相关的生成实体中的 NBT
     iron-golems-can-spawn-in-air: false # 铁傀儡可以在空中生成
     monster-spawn-max-light-level: -1 # 怪物最大生成亮度（-1 为原版行为）
     non-player-arrow-despawn-rate: '200' # 非玩家箭消失速率

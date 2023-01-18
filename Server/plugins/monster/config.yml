@@ -30,8 +30,8 @@ EnchantmentNumber: 4
 worlds:
   - "Iluyf"
 
-# 怪物初始等级范围
-randomLevel: 25
+# 怪物初始等级标准差系数
+randomLevel: 0.02
 
 # 怪物攻击玩家升级概率
 levelProbability: 0.25

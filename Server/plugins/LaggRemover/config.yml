@@ -95,4 +95,4 @@ protocol_warnings:
     - 'f:%PREFIX%&eAll hostile entities have been cleared.'
 
 # Enables/Disables the "LaggRemover V2" splash screen when the plugin starts
-splashScreen: true
+splashScreen: false

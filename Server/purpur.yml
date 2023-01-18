@@ -312,7 +312,7 @@ world-settings:
         bypass-mob-griefing: false
         takes-damage-from-water: false
         explode-when-killed: false
-        health-impacts-explosion: false
+        health-impacts-explosion: true
         always-drop-exp: false
         head-visibility-percent: 0.5
       dolphin:
@@ -671,7 +671,7 @@ world-settings:
         attributes:
           max_health: 6.0
         takes-damage-from-water: false
-        can-breed: false
+        can-breed: true
         always-drop-exp: false
       piglin:
         ridable: true

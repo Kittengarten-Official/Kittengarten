@@ -17,14 +17,14 @@ async-chunks: # 异步区块
 chunk-loading: # 区块加载
   autoconfig-send-distance: true # 自动配置发送距离
   enable-frustum-priority: true # 启用视野优先级（通常不建议使用，默认 false）
-  global-max-chunk-load-rate: 50.0 # 全局区块加载速率上限（默认 -1.0，即禁用）
-  global-max-chunk-send-rate: 50.0 # 全局区块发送速率上限（默认 -1.0，即禁用）
-  global-max-concurrent-loads: 100.0 # 全局最大并发加载区块数（默认 500）
+  global-max-chunk-load-rate: 25.0 # 全局区块加载速率上限（默认 -1.0，即禁用）
+  global-max-chunk-send-rate: 25.0 # 全局区块发送速率上限（默认 -1.0，即禁用）
+  global-max-concurrent-loads: 50.0 # 全局最大并发加载区块数（默认 500）
   max-concurrent-sends: 2 # 最大并发发送区块数（默认 2）
   min-load-radius: 2 # 最小加载半径
-  player-max-chunk-load-rate: 20.0 # 玩家区块加载速率上限（默认 -1.0，即禁用）
-  player-max-concurrent-loads: 20.0 # 玩家最大并发加载区块数（默认 20）
-  target-player-chunk-send-rate: 50.0 # 目标玩家区块发送速率上限（默认 100.0）
+  player-max-chunk-load-rate: 10.0 # 玩家区块加载速率上限（默认 -1.0，即禁用）
+  player-max-concurrent-loads: 10.0 # 玩家最大并发加载区块数（默认 20）
+  target-player-chunk-send-rate: 25.0 # 目标玩家区块发送速率上限（默认 100.0）
 collisions: # 碰撞
   enable-player-collisions: true # 启用玩家碰撞
   send-full-pos-for-hard-colliding-entities: true # 发送船只、矿车碰撞精确位置

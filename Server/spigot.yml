@@ -29,11 +29,11 @@ settings: # 设置
   restart-script: ./start.sh # 重启服务端脚本
   attribute: # 属性
     maxHealth: # HP 上限
-      max: 2048.0
+      max: 5000000.0
     movementSpeed: # 移速
       max: 2048.0 
     attackDamage: # 攻击伤害
-      max: 2048.0
+      max: 1000000.0
 messages: # 消息
   whitelist: 幼喵园的门上锁了，请联系园长获取钥匙。 # 白名单
   unknown-command: 这个指令是什么呀？输入 “/help” 获得帮助。 # 未知命令
