@@ -33,7 +33,7 @@ enable-async-entity-tracker: true # 启用异步实体追踪
 # 其它设置
 misc: # 杂项
   disable-method-profiler: true # 禁用方法探查器
-  disable-out-of-order-chat: false # 禁用违规聊天
+  disable-out-of-order-chat: true # 禁用违规聊天
 # 配置 Flare（内置探查器）
 flare:
   url: https://flare.airplane.gg

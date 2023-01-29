@@ -57,7 +57,7 @@ messages: # 消息
     connection-throttle: 连接太频繁了，嘤嘤嘤。 # 连接限制
     flying-player: 风之翼是需要取得执照的喵！ # 飞行玩家
     flying-vehicle: 坠毁。 # 飞行器
-  no-permission: <red>不是管理员，不可以随便使用喵！ #无权限
+  no-permission: <red>不是管理员，不可以随便使用喵！ # 无权限
   use-display-name-in-quit-message: false # 在退出消息中使用玩家的显示名称（由插件设置）
 misc: # 杂项
   fix-entity-position-desync: true # 修复实体位置不同步
@@ -98,7 +98,7 @@ spam-limiter: # 滥用限制器
   recipe-spam-increment: 1 # 玩家按下合成表的计数
   recipe-spam-limit: 20 # 合成表计数上限
   tab-spam-increment: 1 # 玩家在聊天窗口按下 Tab 的计数
-  tab-spam-limit: 500 # Tab 计数上限
+  tab-spam-limit: 512 # Tab 计数上限
 timings: # Timings 性能分析
   enabled: false # 启用
   hidden-config-entries: # 隐藏配置条目

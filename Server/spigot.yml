@@ -59,6 +59,8 @@ commands: # 命令
   - tellraw
   spam-exclusions: # 排除滥用（执行这些命令的玩家不会因滥用被踢）
   - /skill
+  - /expex
+  - /ee
 stats: # 统计
   disable-saving: false # 禁用保存统计、成就
   forced-stats: {} # 强制成就
@@ -71,19 +73,19 @@ world-settings: # 世界设置
     simulation-distance: 4 # 模拟距离
     thunder-chance: 100000 # 雷击机会
     verbose: false # 启用详细信息
-    dragon-death-sound-radius: 0 # 末影龙死亡声音半径（默认0）
-    item-despawn-rate: 3000 # 实体消失时间刻数（默认6000）
-    view-distance: 10 # 可视距离（区块数）（可设置整数1-15）
-    wither-spawn-sound-radius: 0 # 凋灵生成声音半径（默认0）
+    dragon-death-sound-radius: 0 # 末影龙死亡声音半径（默认 0）
+    item-despawn-rate: 3000 # 实体消失时间刻数（默认 6000）
+    view-distance: 10 # 可视距离（区块数）（可设置整数 1-15）
+    wither-spawn-sound-radius: 0 # 凋灵生成声音半径（默认 0）
     enable-zombie-pigmen-portal-spawns: true # 启用下界传送门生成僵尸猪灵
-    hanging-tick-frequency: 100 # 悬挂实体更新间隔时间刻数（默认100）
-    arrow-despawn-rate: 300 # 箭消失时间刻数（默认1200）
+    hanging-tick-frequency: 100 # 悬挂实体更新间隔时间刻数（默认 100）
+    arrow-despawn-rate: 300 # 箭消失时间刻数（默认 1200）
     trident-despawn-rate: 300 # 三叉戟消失时间刻数
     zombie-aggressive-towards-villager: true # 僵尸攻击村民
     nerf-spawner-mobs: true # 刷怪笼产生的怪物没有 AI
-    end-portal-sound-radius: 0 # 末地传送门声音半径（默认0）
-    mob-spawn-range: 3 # 怪物生成范围（在玩家 x 区块以内）（默认6）
-    hopper-amount: 1 # 漏斗一次传送数量（默认1）
+    end-portal-sound-radius: 0 # 末地传送门声音半径（默认 0）
+    mob-spawn-range: 3 # 怪物生成范围（在玩家 x 区块以内）（默认 6）
+    hopper-amount: 1 # 漏斗一次传送数量（默认 1）
     seed-village: 10387312 # 村庄种子
     seed-desert: 14357617 # 沙漠神殿种子
     seed-igloo: 14357618 # 雪屋种子
@@ -100,8 +102,8 @@ world-settings: # 世界设置
     seed-mansion: 10387319 # 林地府邸种子
     seed-fossil: 14357921 # 下界化石种子
     seed-portal: 34222645 # 废弃传送门种子
-    max-tnt-per-tick: 5 # 每刻TNT上限（默认100）
-    max-entity-collisions: 1 # 每刻实体碰撞次数上限（默认8）
+    max-tnt-per-tick: 5 # 每刻TNT上限（默认 100）
+    max-entity-collisions: 1 # 每刻实体碰撞次数上限（默认 8）
     merge-radius: # 合并半径
       item: 2.5 # 物品
       exp: 8.0 # 经验球
@@ -111,7 +113,7 @@ world-settings: # 世界设置
       monsters: 48 # 怪物
       misc: 32 # 杂项
       other: 64 # 其它
-    growth: # 生长（因数，100为原版默认值）
+    growth: # 生长（因数，100 为原版默认值）
       twistingvines-modifier: 100 # 缠怨藤
       weepingvines-modifier: 100 # 垂泪藤
       cavevines-modifier: 100 # 洞穴藤蔓
@@ -159,8 +161,8 @@ world-settings: # 世界设置
       villagers-work-immunity-for: 16 # 村民工作免除
       villagers-active-for-panic: true # 村民恐慌
     ticks-per: # 间隔时间刻数
-      hopper-transfer: 24 # 漏斗传输（默认8）
-      hopper-check: 3 # 漏斗检查（默认1）
+      hopper-transfer: 8 # 漏斗传输（默认 8）
+      hopper-check: 1 # 漏斗检查（默认 1）
     max-tick-time: # 每刻时间上限
       tile: 1000 # 熔炉、箱子、牌子、骷髅头等
       entity: 1000 # 实体
@@ -173,4 +175,4 @@ world-settings: # 世界设置
       sprint-multiplier: 0.1 # 冲刺因数
       other-multiplier: 0.0 # 其它因数
     squid-spawn-range: # 鱿鱼生成范围
-      min: 45 # 高度下限（默认45）
+      min: 45 # 高度下限（默认 45）

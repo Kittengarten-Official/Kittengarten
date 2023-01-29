@@ -48,8 +48,8 @@ settings:
     minecraft:lime_bed:
       distance: 0.5
   messages:
-    ram-command-output: '<green>Ram Usage: <used>/<xmx> (<percent>)'
-    rambar-command-output: <green>Rambar toggled <onoff> for <target>
+    ram-command-output: '<green>内存使用：<used>/<xmx> (<percent>)'
+    rambar-command-output: <green>内存横幅调整为 <onoff> 于 <target>
     cannot-ride-mob: <red>你不能骑它喵！
     afk-broadcast-away: <yellow><italic>%s 在挂机喵！
     afk-broadcast-back: <yellow><italic>%s 停止挂机了喵！
