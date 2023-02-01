@@ -35,7 +35,7 @@ settings: # 设置
     attackDamage: # 攻击伤害
       max: 1000000.0
 messages: # 消息
-  whitelist: 幼喵园的门上锁了，请联系园长获取钥匙。 # 白名单
+  whitelist: 幼喵园的门上锁了，请联系依芙喵获取钥匙。 # 白名单
   unknown-command: 这个指令是什么呀？输入 “/help” 获得帮助。 # 未知命令
   server-full: 幼喵园已经满了，请等待有小猫咪离开后再试。 # 服务端满
   outdated-client: 版本不兼容，请使用 {0} # 过期客户端
