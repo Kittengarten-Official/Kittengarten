@@ -1,1 +1,1 @@
-java -Xms3G -Xmx3G -XX:+UseZGC -Djava.awt.headless=true --add-modules=jdk.incubator.vector -jar purpur-1.19.3-1906.jar nogui
+java -Xms3G -Xmx3G -XX:+UseZGC -Djava.awt.headless=true --add-modules=jdk.incubator.vector -jar purpur-1.20.1-1995.jar nogui
