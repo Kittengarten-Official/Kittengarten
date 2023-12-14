@@ -26,7 +26,7 @@ settings: # 设置
   netty-threads: 4 # Netty 用于网络运作的线程数（默认 4）
   timeout-time: 60 # 服务端崩溃重启前停止响应的时间秒数（默认 60）
   restart-on-crash: true # 崩溃时重启服务端
-  restart-script: ./start.sh # 重启服务端脚本
+  restart-script: ./zing.sh # 重启服务端脚本
   attribute: # 属性
     maxHealth: # HP 上限
       max: 5000000.0

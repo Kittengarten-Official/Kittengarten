@@ -1,0 +1,1 @@
+java -Djava.awt.headless=true -Xlog:gc*:logs/gc.log:time,uptime:filecount=5,filesize=1M -XX:ProfileLogIn=./prof -XX:ProfileLogOut=./prof -XX:+FalconUseCompileStashing -XX:+FalconLoadObjectCache -XX:+FalconSaveObjectCache -XX:FalconUseAVX=512 -Xms5G -Xmx5G -jar purpur-1.20.2-2095.jar nogui

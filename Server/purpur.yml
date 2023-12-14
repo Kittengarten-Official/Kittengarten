@@ -10,6 +10,10 @@
 
 verbose: false
 settings:
+  player-deaths-always-show-item: true
+  fix-network-serialized-items-in-creative: false
+  clamp-attributes: true
+  limit-armor: true
   fix-projectile-looting-transfer: false
   blast-resistance-overrides: {}
   block-fall-multipliers:
@@ -47,26 +51,28 @@ settings:
       distance: 0.5
     minecraft:lime_bed:
       distance: 0.5
-  messages:
-    ram-command-output: '<green>内存使用：<used>/<xmx> (<percent>)'
-    rambar-command-output: <green>内存横幅调整为 <onoff> 于 <target>
-    cannot-ride-mob: <red>你不能骑它喵！
+  messages:    
+    afk-broadcast-use-display-name: false
     afk-broadcast-away: <yellow><italic>%s 在挂机喵！
     afk-broadcast-back: <yellow><italic>%s 停止挂机了喵！
     afk-tab-list-prefix: '[AFK] '
     afk-tab-list-suffix: ''
+    cannot-ride-mob: <red>你不能骑它喵！
     credits-command-output: <green>%s 见证了终末之诗
     demo-command-output: <green>%s 看到了试用屏幕
-    ping-command-output: <green>%s 的延迟是 %s ms
-    tpsbar-command-output: <green>TPS 横幅调整为 <onoff> 于 <target>
-    dont-run-with-scissors: <red><italic>不要带着剪刀奔跑！
-    uptime-command-output: <green>服务器已运行：<uptime>
-    unverified-username: （不明幼体）
-    sleep-skipping-night: 晚安～希望能梦到温柔的地方～
-    sleeping-players-percent: default
     death-message:
       run-with-scissors: <player> 滑倒并摔在了剪刀上
       stonecutter: <player> 裂开了
+    dont-run-with-scissors: <red><italic>不要带着剪刀奔跑！
+    ping-command-output: <green>%s 的延迟是 %s ms
+    ram-command-output: <green>内存使用：<used>/<xmx> (<percent>)
+    rambar-command-output: <green>内存横幅调整为 <onoff> 于 <target>
+    sleep-not-possible: 你怎么睡得着的？你这个阶段你睡得着觉？
+    sleep-skipping-night: 晚安～希望能梦到温柔的地方～
+    sleeping-players-percent: 昏睡：<count>/<total>
+    tpsbar-command-output: <green>TPS 横幅调整为 <onoff> 于 <target>
+    uptime-command-output: <green>服务器已运行：<uptime>
+    unverified-username: （不明幼体）
   tps-catchup: true
   server-mod-name: Kittengarten
   disable-give-dropping: false
@@ -75,6 +81,18 @@ settings:
       buried_treasure: -1
       mineshaft: -1
   command:
+    rambar:
+      title: <gray>内存<yellow>:</yellow> <used>/<xmx> (<percent>)
+      overlay: NOTCHED_20
+      progress-color:
+        good: GREEN
+        medium: YELLOW
+        low: RED
+      text-color:
+        good: <gradient:#55ff55:#00aa00><text></gradient>
+        medium: <gradient:#ffff55:#ffaa00><text></gradient>
+        low: <gradient:#ff5555:#aa0000><text></gradient>
+      tick-interval: 20
     tpsbar:
       title: <gray>TPS<yellow>:</yellow> <tps> MSPT<yellow>:</yellow> <mspt> Ping<yellow>:</yellow>
         <ping>ms
@@ -117,6 +135,14 @@ settings:
       only-broadcast-to-affected-player: false
   lagging-threshold: 19.0
   blocks:
+    cave_vines:
+      max-growth-age: 25
+    kelp:
+      max-growth-age: 25
+    twisting_vines:
+      max-growth-age: 25
+    weeping_vines:
+      max-growth-age: 25
     barrel:
       rows: 6
     ender_chest:
@@ -167,10 +193,30 @@ settings:
   allow-water-placement-in-the-end: false
   username-valid-characters: ^[a-zA-Z0-9_.]*$
   use-alternate-keepalive: true
-config-version: 30
+config-version: 33
 world-settings:
   default:
     mobs:
+      sniffer:
+        ridable: true
+        ridable-in-water: true
+        controllable: true
+        attributes:
+          max_health: 14.0
+        breeding-delay-ticks: 6000
+      camel:
+        ridable-in-water: true
+        attributes:
+          max_health:
+            min: 32.0
+            max: 32.0
+          jump_strength:
+            min: 0.42
+            max: 0.42
+          movement_speed:
+            min: 0.09
+            max: 0.09
+        breeding-delay-ticks: 6000
       ender_dragon:
         ridable: true
         ridable-in-water: false
@@ -953,7 +999,7 @@ world-settings:
         ridable-in-water: true
         controllable: true
         attributes:
-          max_health: 8.0
+          max_health: 8192.0
         default-collar-color: RED
         milk-cures-rabid-wolves: true
         spawn-rabid-chance: 0.0
@@ -1044,13 +1090,17 @@ world-settings:
           enabled: true
         always-drop-exp: false
     blocks:
+      sugar_cane:
+        affected-by-bonemeal: true
+      nether_wart:
+        affected-by-bonemeal: true
       enchantment-table:
         lapis-persists: true
       respawn_anchor:
         explode: true
         explosion-power: 5.0
         explosion-fire: true
-        explosion-effect: DESTROY
+        explosion-effect: NONE
       weeping_vines:
         max-growth-age: 25
       twisting_vines:
@@ -1075,12 +1125,14 @@ world-settings:
         explode-on-villager-sleep: false
         explosion-power: 5.0
         explosion-fire: true
-        explosion-effect: DESTROY
+        explosion-effect: BLOCK
       cactus:
+        affected-by-bonemeal: true
         breaks-from-solid-neighbors: true
       azalea:
         growth-chance: 0.0
       beacon:
+        allow-effects-with-tinted-glass: true
         effect-range:
           level-1: 20
           level-2: 30
@@ -1089,6 +1141,7 @@ world-settings:
       composter:
         sneak-to-bulk-process: false
       anvil:
+        use-mini-message: true
         allow-colors: true
         iron-ingots-used-for-repair: 1
         obsidian-used-for-damage: 0
@@ -1121,12 +1174,12 @@ world-settings:
           explode: true
           explosion-power: 6.0
           explosion-fire: false
-          explosion-effect: DESTROY
+          explosion-effect: NONE
         base:
           explode: true
           explosion-power: 6.0
           explosion-fire: false
-          explosion-effect: DESTROY
+          explosion-effect: NONE
       lava:
         infinite-source: false
         infinite-required-sources: 2
@@ -1387,6 +1440,10 @@ world-settings:
         spectral-arrows: false
         tipped-arrows: false
       player:
+        portal-wait-time: 80
+        creative-portal-wait-time: 1
+        teleport-on-nether-ceiling-damage: false
+        burp-delay: 10
         netherite-fire-resistance:
           duration: 0
           amplifier: 0
