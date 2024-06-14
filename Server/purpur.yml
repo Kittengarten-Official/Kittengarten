@@ -876,7 +876,7 @@ world-settings:
         ridable: true
         ridable-in-water: true
         controllable: true
-        ridable-jump-height: 0.6499999761581421
+        ridable-jump-height: 64.99999761581421
         breeding-delay-ticks: 6000
       ghast:
         ridable: true
