@@ -5,8 +5,8 @@
 # If you need help with the configuration or have any questions related to Purpur,
 # join us in our Discord guild.
 #
-# Website: https://purpurmc.org 
-# Docs: https://purpurmc.org/docs 
+# Website: https://purpurmc.org
+# Docs: https://purpurmc.org/docs
 
 verbose: false
 settings:
@@ -72,7 +72,7 @@ settings:
       percent: 1.0
       tick-interval: 5
     gamemode:
-      requires-specific-permission: false    
+      requires-specific-permission: false
     hide-hidden-players-from-entity-selector: true
     uptime:
       format: <days><hours><minutes><seconds>
@@ -144,12 +144,12 @@ settings:
       replace-incompatible-enchants: false
     allow-unsafe-enchant-command: false
     clamp-levels: true
-  allow-water-placement-in-the-end: false  
+  allow-water-placement-in-the-end: false
   use-alternate-keepalive: true
-  blast-resistance-overrides: {}  
-  player-deaths-always-show-item: true  
+  blast-resistance-overrides: {}
+  player-deaths-always-show-item: true
   disable-give-dropping: false
-  username-valid-characters: ^[a-zA-Z0-9_.]*$  
+  username-valid-characters: ^[a-zA-Z0-9_.]*$
   fix-projectile-looting-transfer: false
   fix-network-serialized-items-in-creative: false
   block-fall-multipliers:
@@ -422,7 +422,7 @@ world-settings:
         ridable-in-water: true
         controllable: true
         attributes:
-          max_health: 8192.0
+          max_health: 8.0
         default-collar-color: RED
         milk-cures-rabid-wolves: true
         spawn-rabid-chance: 0.0
@@ -1061,7 +1061,7 @@ world-settings:
         ignore-players-wearing-dragon-head: true
         disable-player-stare-aggression: false
         ignore-projectiles: false
-        always-drop-exp: false      
+        always-drop-exp: false
       endermite:
         ridable: true
         ridable-in-water: true
@@ -1567,8 +1567,8 @@ world-settings:
       rain-stops-after-sleep: true
       thunder-stops-after-sleep: true
       mob-last-hurt-by-player-time: 100
-      disable-oxidation-proximity-penalty: false  
-      player:        
+      disable-oxidation-proximity-penalty: false
+      player:
         netherite-fire-resistance:
           duration: 0
           amplifier: 0
@@ -1584,7 +1584,7 @@ world-settings:
         exp-dropped-on-death:
           equation: expLevel * 7
           maximum: 100
-        teleport-if-outside-border: true        
+        teleport-if-outside-border: true
         teleport-on-nether-ceiling-damage: false
         totem-of-undying-works-in-inventory: true
         fix-stuck-in-portal: true
@@ -1596,7 +1596,7 @@ world-settings:
         burp-when-full: true
         ridable-in-water: true
         curse-of-binding:
-          remove-with-weakness: false        
+          remove-with-weakness: false
         shift-right-click-repairs-mending-points: 0
         exp-pickup-delay-ticks: 2
         allow-void-trading: false
@@ -1617,7 +1617,7 @@ world-settings:
         ender-pearl: 1.0
         throwable-potion: 1.0
         trident: 1.0
-        snowball: 1.0      
+        snowball: 1.0
       daylight-cycle-ticks:
         daytime: 241493
         nighttime: 241493
@@ -1632,7 +1632,7 @@ world-settings:
           cactus: []
           explosion: []
           fire: []
-          lightning: []        
+          lightning: []
         ender-pearl:
           damage: 5.0
           cooldown: 20
